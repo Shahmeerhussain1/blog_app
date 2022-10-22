@@ -1,0 +1,11 @@
+.post_div{
+    border: 2px solid black;
+    width: fit-content;
+}
+#post_ul{
+display: flex;
+justify-content: center;
+}
+.richtext_border >{
+    border: 1px solid black;
+}

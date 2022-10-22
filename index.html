@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>blog app</title>
+</head>
+
+<body>
+    <!-- loader -->
+<div id="main_loader">
+    <div id="loader">
+        <div class="loader">
+            <svg id="loading-spinner" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle id="loading-circle-large" cx="40" cy="40" r="36" stroke="#005CB9" stroke-width="8" />
+            </svg>
+            <h1> <h3 style="text-align: center;">Please Wait...</h3>
+            </h1>
+        </div>
+      </div>
+</div>
+<!-- ooo -->
+    <div id="main">
+        <div id="head">
+            <h1>Sign Up</h1>
+        </div>
+        <div id="name">
+            <input type="text" id="namE" placeholder="Full Name">
+        </div>
+        <div id="mail">
+            <input type="text" id="emailS" placeholder="Email">
+        </div>
+       
+        <div id="passward">
+            <input type="password" id="passS" placeholder="Passward">
+        </div>
+        <div id="filess">
+            <label class="custom-file-upload" id="po">
+                <input type="file" required id="User_photo"/>
+                 Upload photo
+            </label>
+        </div>
+
+        <div id="login_change">
+            <p>Already have account <a href="/login/login.html">Login</a></p>
+        </div>
+        <div id="signup_btn">
+            <button id="Signup">
+                Sign up
+            </button>
+        </div>
+    </div>
+    <script src="app.js" type="module"></script>
+</body>
+
+</html>

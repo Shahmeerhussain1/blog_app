@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+
+    <title>Blog app</title>
+</head>
+<body>
+<!-- loader -->
+<div id="main_loader">
+    <div id="loader">
+        <div class="loader">
+            <svg id="loading-spinner" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle id="loading-circle-large" cx="40" cy="40" r="36" stroke="#005CB9" stroke-width="8" />
+            </svg>
+            <h1> <h3 style="text-align: center;">Please Wait...</h3>
+            </h1>
+        </div>
+      </div>
+</div>
+<!-- ooo -->
+
+    <nav id="nav">
+        <div id="frst_nav_sub">
+           <h1>Blogs</h1> 
+        </div>
+        <div id="scnd_nav_sub">
+            <i class="fa-solid fa-square-plus btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"  id="create_post"></i>
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">Create Post</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                     <div id="cuser">
+                      <div id="editor">
+                        <div id="lodar_for_editors">
+                          <svg id="loading-spinner" width="80" height="80" viewBox="0 0 80 80" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <circle id="loading-circle-large" cx="40" cy="40" r="36" stroke="#005CB9" stroke-width="8" />
+            </svg>
+                        </div>
+                        
+                        
+                      </div>
+                     </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Discard</button>
+                      <button type="button" id="submit" data-bs-dismiss="modal">Post</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+            <i  class="fa-solid fa-user btn btn-primary"  data-bs-toggle="modal" data-bs-target="#exampleModal"id="CurrentUser"></i>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">User</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <div id="user_info">
+
+         </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+            <i class="fa-solid fa-right-from-bracket" id="Signout"></i>   
+        </div>
+    </nav>
+    <div id="post_flex">
+    
+</div>
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+<script src="https://kit.fontawesome.com/6b3a62954b.js" crossorigin="anonymous"></script>
+    <script src="bootstrap.js"></script>
+    <script src="room.js" type="module"></script>
+
+</body>
+</html>
